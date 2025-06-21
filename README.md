@@ -7,15 +7,16 @@ SWOTbot is an AI-powered tool that generates comprehensive SWOT (Strengths, Weak
 ### Prerequisites
 
 - Python 3.13 or higher
+- uv package manager
 - API keys for Mistral AI and Tavily
 
 
 ### API Key Configuration
 
-SWOTbot requires two API keys to function properly:
+SWOTbot uses two APIs to function at its best:
 
 1. **Mistral AI API Key**: Used for the language model that powers the analysis
-2. **Tavily API Key**: Used for web searches to validate findings
+2. **Tavily API Key**: (optionally) Used for web searches to validate findings
 
 you can create a `.env` file in the project root with the following content:
 
