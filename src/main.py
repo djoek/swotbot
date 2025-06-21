@@ -17,5 +17,6 @@ if __name__ == "__main__":
 
     swotbot.cli_app(
         message="Introduce yourself by name and purpose, and request the user to provide a project description.",
+        show_message=False,
         markdown=True, user="\nUser", stream=True, emoji="", )
 
