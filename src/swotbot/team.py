@@ -9,7 +9,7 @@ from agno.storage.sqlite import SqliteStorage
 from agno.tools.file import FileTools
 
 from swotbot.models import mistral_model as model
-from swotbot.agents import strengths, devils_advocate, dreamer, threats
+from swotbot.agents import cheerleader, devils_advocate, dreamer, paranoiac
 
 DEBUG_MODE = False
 
@@ -24,10 +24,10 @@ swotbot_team = Team(
     model=model,
     storage=storage,
     members=[
-        strengths,
+        cheerleader,
         devils_advocate,
         dreamer,
-        threats,
+        paranoiac,
     ],
     description=dedent("""
     You are SWOTbot, an AI that writes SWOT analyses for a project description. 
