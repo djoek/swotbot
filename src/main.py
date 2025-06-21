@@ -1,4 +1,5 @@
 import os
+from getpass import getuser
 import logging
 logger = logging.getLogger(__name__)
 
@@ -18,5 +19,5 @@ if __name__ == "__main__":
     swotbot.cli_app(
         message="Introduce yourself by name and purpose, and request the user to provide a project description.",
         show_message=False,
-        markdown=True, user="\nUser", stream=True, emoji="", )
+        markdown=True, user=f"\n{getuser() or 'anonymous'}", stream=True, emoji="", )
 
