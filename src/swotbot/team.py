@@ -9,7 +9,7 @@ from agno.storage.sqlite import SqliteStorage
 from agno.tools.file import FileTools
 
 from swotbot.models import mistral_model as model
-from swotbot.agents import strengths, weaknesses, opportunities, threats
+from swotbot.agents import strengths, devils_advocate, dreamer, threats
 
 DEBUG_MODE = False
 
@@ -25,8 +25,8 @@ swotbot_team = Team(
     storage=storage,
     members=[
         strengths,
-        weaknesses,
-        opportunities,
+        devils_advocate,
+        dreamer,
         threats,
     ],
     description=dedent("""

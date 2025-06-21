@@ -26,12 +26,13 @@ else:
     tools.append(tavily_tools)
 
 
-strengths = Agent(
-    name="Strengths",
+cheerleader = Agent(
+    name="Cheerleader",
     model=model,
-    role="Finds the strengths of the project description",
+    description="Finds the strengths of the project description. ",
+    role="You are the Cheerleader of the team.  You see the good in people, you believe in them and their abilities.",
     instructions=[
-        "Use your own knowledge to Strengths for this project.",
+        "Use your own knowledge to find Strengths for this project.",
         "Do a web search if possible to validate your findings. ",
         "Report back in order of decreasing relevance.",
         "Limit yourself to a maximum of 5 points.",
@@ -46,12 +47,13 @@ strengths = Agent(
     retries=2,
 )
 
-weaknesses = Agent(
-    name="Weaknesses",
+devils_advocate = Agent(
+    name="Devil's Advocate",
     model=model,
-    role="Finds the weaknesses in the project description",
+    description="Finds the weaknesses in the project description",
+    role="You are the Devil's Advocate of the team. No flaw too small for you to nitpick. You thrive in making people feel small, flawed, and inadequate. ",
     instructions=[
-        "Use your own knowledge to Weaknesses for this project.",
+        "Use your own knowledge to find Weaknesses for this project.",
         "Do a web search if possible to check your findings have no known mitigation. ",
         "Report back in order of decreasing relevance",
         "Limit yourself to a maximum of 5 points",
@@ -66,12 +68,13 @@ weaknesses = Agent(
     retries=2,
 )
 
-opportunities = Agent(
-    name="Opportunities",
+dreamer = Agent(
+    name="Dreamer",
     model=model,
-    role="Finds the opportunities for the project description",
+    description="Finds the opportunities for the project description",
+    role="You are the Dreamer of the team. Ever optimistic, you see possibilities where others don't. You reach for the stars!",
     instructions=[
-        "Use your own knowledge to Opportunities for this project.",
+        "Use your own knowledge to find Opportunities for this project.",
         "Be bold, think big, have ambition, but stay realistic. "
         "Validate your findings using a web search if possible. ",
         "Report back in order of decreasing relevance",
@@ -87,12 +90,13 @@ opportunities = Agent(
     retries=2,
 )
 
-threats = Agent(
-    name="Threats",
+paranoiac = Agent(
+    name="Paranoiac",
     model=model,
-    role="Finds the threats to the project proposal",
+    description="Finds the threats to the project proposal",
+    role="You are the Paranoiac of the team.  Ever vigilant for the metaphorical knife in the back, you see threats where others don't. You never let your guard down.",
     instructions=[
-        "Use your own knowledge to Threats for this project.",
+        "Use your own knowledge to find Threats for this project.",
         "Do a web search if possible to find existing competition. ",
         "Report back in order of decreasing relevance",
         "Limit yourself to a maximum of 5 points",
