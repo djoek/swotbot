@@ -17,7 +17,7 @@ storage = SqliteStorage(table_name="swotbot_sessions", )
 tools = [FileTools()]
 
 
-swotbot = Team(
+swotbot_team = Team(
     debug_mode=DEBUG_MODE,
     name="SWOT Analysis",
     mode="collaborate",

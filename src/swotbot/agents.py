@@ -12,15 +12,16 @@ from swotbot.models import mistral_model as model
 tools = []
 
 try:
-    _ = os.environ['TAVILY_API_KEY']
+    tavily_api_key = os.environ['TAVILY_API_KEY']
 except KeyError:
     logger.warning("TAVILY_API_KEY not set. Accuracy will be lower.")
 else:
     tavily_tools = TavilyTools(
         cache_results=True,
-        max_tokens=1024,
+        max_tokens=4096,
         search_depth="advanced",
         format="markdown",
+        tavily_api_key=tavily_api_key,
     )
     tools.append(tavily_tools)
 
