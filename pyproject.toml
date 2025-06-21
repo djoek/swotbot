@@ -1,7 +1,7 @@
 [project]
 name = "swotbot"
-version = "0.1.0"
-description = "Add your description here"
+version = "2025.06_001"
+description = "SWOTbot is an AI-powered tool that generates comprehensive SWOT (Strengths, Weaknesses, Opportunities, Threats) analyses for your project outlines. It uses AI agents to analyze your project description and provide professional, factual, and straightforward insights."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
