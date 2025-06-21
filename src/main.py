@@ -10,7 +10,7 @@ load_dotenv('./.env')
 
 if __name__ == "__main__":
     try:
-        os.environ['MISTRAL_API_KEY']
+        _ = os.environ['MISTRAL_API_KEY']
     except KeyError:
         logger.error('MISTRAL_API_KEY not set. I really need this. ')
         exit(1)
