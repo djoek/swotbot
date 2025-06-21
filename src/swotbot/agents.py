@@ -11,7 +11,11 @@ from swotbot.models import mistral_model as model
 
 tools = []
 
-if os.getenv('TAVILY_API_KEY'):
+try:
+    _ = os['TAVILY_API_KEY']
+except KeyError:
+    logger.warning("TAVILY_API_KEY not set. Accuracy will be lower.")
+else:
     tavily_tools = TavilyTools(
         cache_results=True,
         max_tokens=1024,
@@ -35,7 +39,7 @@ strengths = Agent(
     add_name_to_instructions=True,
     tools=tools,
     show_tool_calls=False,
-    tool_call_limit=1,
+    tool_call_limit=2,
     markdown=True,
     exponential_backoff=True,
     retries=2,
@@ -55,7 +59,7 @@ weaknesses = Agent(
     add_name_to_instructions=True,
     tools=tools,
     show_tool_calls=False,
-    tool_call_limit=1,
+    tool_call_limit=2,
     markdown=True,
     exponential_backoff=True,
     retries=2,
@@ -76,7 +80,7 @@ opportunities = Agent(
     add_name_to_instructions=True,
     tools=tools,
     show_tool_calls=False,
-    tool_call_limit=1,
+    tool_call_limit=2,
     markdown=True,
     exponential_backoff=True,
     retries=2,
@@ -96,7 +100,7 @@ threats = Agent(
     add_name_to_instructions=True,
     tools=tools,
     show_tool_calls=False,
-    tool_call_limit=1,
+    tool_call_limit=2,
     markdown=True,
     exponential_backoff=True,
     retries=2,
