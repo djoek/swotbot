@@ -1,12 +1,12 @@
 import os
 import logging
-
 logger = logging.getLogger(__name__)
 
-from swotbot.team import swotbot
 from dotenv import load_dotenv
-
 load_dotenv('./.env')
+
+from swotbot.team import swotbot
+
 
 if __name__ == "__main__":
     try:
