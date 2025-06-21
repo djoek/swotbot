@@ -21,7 +21,7 @@ else:
         max_tokens=4096,
         search_depth="advanced",
         format="markdown",
-        tavily_api_key=tavily_api_key,
+        api_key=tavily_api_key,
     )
     tools.append(tavily_tools)
 
