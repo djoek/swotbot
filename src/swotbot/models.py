@@ -1,4 +1,4 @@
 import os
 from agno.models.mistral import MistralChat
 
-mistral_model = MistralChat(id="mistral-medium-latest", api_key=os.getenv("MISTRAL_API_KEY"), )
+mistral_model = MistralChat(id="mistral-large-latest", api_key=os.getenv("MISTRAL_API_KEY"), )

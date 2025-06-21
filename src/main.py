@@ -17,7 +17,7 @@ if __name__ == "__main__":
         exit(1)
 
     swotbot_team.cli_app(
-        message="Introduce yourself by name and purpose, and request the user to provide a project description.",
+        message="Introduce yourself briefly, and request the user to provide a project description.",
         show_message=False,
         markdown=True, user=f"\n{getuser() or 'anonymous'}", stream=True, emoji="", )
 
