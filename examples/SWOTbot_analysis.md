@@ -44,7 +44,7 @@ The current user base of SWOTbot is limited to its creator, and the plan to expa
 The creator does not plan to maintain SWOTbot as it was developed as a weekend project. This lack of ongoing support and updates could lead to issues with reliability, security, and compatibility over time, potentially affecting user trust and satisfaction.
 
 ### Potential Quality Concerns
-The project description mentions that users "don't really care if it is done by AI," which might imply potential quality concerns. Users who are not particular about the quality of the SWOT analysis might still face issues with accuracy and relevance, impacting the tool's credibility.
+The project description mentions targeting users "that don't really care if it is done by AI," which might imply potential quality concerns. Users who are not particular about the quality of the SWOT analysis might still face issues with accuracy and relevance, impacting the tool's credibility.
 
 ### Dependence on a Specific AI Framework
 SWOTbot is built using a specific AI framework called Agno. Dependence on a single framework could be a limitation if the framework becomes outdated or lacks community support, potentially restricting the project's flexibility and future development.
