@@ -10,7 +10,7 @@ from agno.storage.sqlite import SqliteStorage
 from agno.tools.file import FileTools
 
 from swotbot.models import model
-from swotbot.agents import cheerleader, devils_advocate, dreamer, paranoiac
+from swotbot.agents import cheerleader, devils_advocate, visionary, paranoiac
 
 
 storage = SqliteStorage(table_name="swotbot_sessions", db_file=str(pathlib.Path().cwd().joinpath("swotbot.db")))
@@ -25,7 +25,7 @@ swotbot_team = Team(
     members=[
         cheerleader,
         devils_advocate,
-        dreamer,
+        visionary,
         paranoiac,
     ],
     description=dedent("""

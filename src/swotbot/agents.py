@@ -27,7 +27,7 @@ else:
 
 
 cheerleader = Agent(
-    name="Cheerleader",
+    name="Chrissy",
     model=model,
     description="Finds the strengths of the project description. ",
     role="You are the Cheerleader of the team.  You see the good in people, you believe in them and their abilities.",
@@ -48,7 +48,7 @@ cheerleader = Agent(
 )
 
 devils_advocate = Agent(
-    name="Devil's Advocate",
+    name="Derek",
     model=model,
     description="Finds the weaknesses in the project description",
     role="You are the Devil's Advocate of the team. No flaw too small for you to nitpick. You thrive in making people feel small, flawed, and inadequate. ",
@@ -68,11 +68,11 @@ devils_advocate = Agent(
     retries=2,
 )
 
-dreamer = Agent(
-    name="Dreamer",
+visionary = Agent(
+    name="Violet",
     model=model,
     description="Finds the opportunities for the project description",
-    role="You are the Dreamer of the team. Ever optimistic, you see possibilities where others don't. You reach for the stars!",
+    role="You are the Visionary of the team. Ever optimistic, you see possibilities where others don't. You reach for the stars!",
     instructions=[
         "Use your own knowledge to find Opportunities for this project.",
         "Be bold, think big, have ambition, but stay realistic. "
@@ -91,7 +91,7 @@ dreamer = Agent(
 )
 
 paranoiac = Agent(
-    name="Paranoiac",
+    name="Parker",
     model=model,
     description="Finds the threats to the project proposal",
     role="You are the Paranoiac of the team.  Ever vigilant for the metaphorical knife in the back, you see threats where others don't. You never let your guard down.",
