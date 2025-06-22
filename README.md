@@ -5,7 +5,7 @@
 SWOTbot is an AI-powered tool that generates comprehensive SWOT (Strengths, Weaknesses, Opportunities, Threats) analyses for your project outlines. 
 It uses AI agents to analyse your project description and provide professional, factual, and straightforward insights.
 
-This is not intended as a production tool. It's a fun little tool that demos the possibilities of agentic AI using https://www.agno.com/
+This is not intended as a production tool. It's a fun little weekend project that demos the possibilities of agentic AI using https://www.agno.com/
 
 ## Example
 
