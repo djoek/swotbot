@@ -1,5 +1,6 @@
 # SWOTbot
 
+![swot](https://images.app.goo.gl/5JEdfhTAXniQNJZi6)
 SWOTbot is an AI-powered tool that generates comprehensive SWOT (Strengths, Weaknesses, Opportunities, Threats) analyses for your project outlines. 
 It uses AI agents to analyse your project description and provide professional, factual, and straightforward insights.
 
