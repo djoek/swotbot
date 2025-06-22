@@ -28,7 +28,7 @@ SWOTbot uses two APIs to function at its best:
 1. **Mistral AI API Key**: Used for the language model that powers the analysis
 2. **Tavily API Key**: (optionally) Used for web searches to validate findings
 
-you can create a `.env` file in the project root with the following content:
+you can set your env variables in the usual way, or create a `.env` file where you run swotbot with the following content:
 
 ```
 MISTRAL_API_KEY=your_mistral_api_key
@@ -48,7 +48,7 @@ TAVILY_API_KEY=your_tavily_api_key
 To run SWOTbot, execute the main.py script:
 
 ```bash
-uv run src/main.py
+uv run swotbot
 ```
 
 Follow the instructions. In the end, you can save the file by asking.  To end, just type `exit`

@@ -1,15 +1,15 @@
 import os
+import pathlib
 from getpass import getuser
 import logging
 logger = logging.getLogger(__name__)
 
 from dotenv import load_dotenv
-load_dotenv('./.env')
+load_dotenv(pathlib.Path().cwd() / '.env')
 
 from swotbot.team import swotbot_team
 
-
-if __name__ == "__main__":
+def main():
     try:
         _ = os.environ['MISTRAL_API_KEY']
     except KeyError:
@@ -21,3 +21,7 @@ if __name__ == "__main__":
         show_message=False,
         markdown=True, user=f"\n{getuser() or 'anonymous'}", stream=True, emoji="", )
 
+
+
+if __name__ == "__main__":
+    main()

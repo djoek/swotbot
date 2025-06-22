@@ -8,9 +8,17 @@ dependencies = [
     "agno>=1.6.3",
     "duckduckgo-search>=8.0.4",
     "fastapi>=0.115.13",
+    "hatchling>=1.27.0",
     "mistralai>=1.8.2",
     "python-dotenv>=1.1.0",
     "sqlalchemy>=2.0.41",
     "tavily-python>=0.7.7",
     "uvicorn>=0.34.3",
 ]
+
+[project.scripts]
+swotbot = "swotbot:main.main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
