@@ -13,11 +13,12 @@ dependencies = [
     "python-dotenv>=1.1.0",
     "sqlalchemy>=2.0.41",
     "tavily-python>=0.7.7",
+    "typer>=0.16.0",
     "uvicorn>=0.34.3",
 ]
 
 [project.scripts]
-swotbot = "swotbot:main.main"
+swotbot = "swotbot:main.run"
 
 [build-system]
 requires = ["hatchling"]

@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 from agno.agent import Agent
 from agno.tools.tavily import TavilyTools
 
-from swotbot.models import mistral_model as model
+from swotbot.models import model
 
 
 tools = []

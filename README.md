@@ -17,21 +17,23 @@ in the `examples/` folder you can read what SWOTbot wrote about itself.
 ### Prerequisites
 
 - Python 3.13 or higher
-- uv package manager
-- API keys for Mistral AI and Tavily
+- uv package manager (install instructions here: https://docs.astral.sh/uv/getting-started/installation/)
+- API keys for Mistral AI or OpenAI
+- Optionally API key for Tavily
 
 
 ### API Key Configuration
 
 SWOTbot uses two APIs to function at its best:
 
-1. **Mistral AI API Key**: Used for the language model that powers the analysis
+1. **Mistral AI API Key** or **OpenAI API Key**: Used for the language model that powers the analysis
 2. **Tavily API Key**: (optionally) Used for web searches to validate findings
 
 you can set your env variables in the usual way, or create a `.env` file where you run swotbot with the following content:
 
 ```
 MISTRAL_API_KEY=your_mistral_api_key
+OPENAI_API_KEY=your_openai_api_key
 TAVILY_API_KEY=your_tavily_api_key
 ```
 

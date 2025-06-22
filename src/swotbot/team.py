@@ -10,7 +10,7 @@ from agno.team.team import Team
 from agno.storage.sqlite import SqliteStorage
 from agno.tools.file import FileTools
 
-from swotbot.models import mistral_model as model
+from swotbot.models import model
 from swotbot.agents import cheerleader, devils_advocate, dreamer, paranoiac
 
 DEBUG_MODE = False
