@@ -29,7 +29,7 @@ else:
 cheerleader = Agent(
     name="Chrissy",
     model=model,
-    description="Finds the strengths of the project description. ",
+    description="Finds the strengths of the project description. Threats are INTERNAL factors that INCREASE the chance of success for the project. Examples: Unique value added by the team, access to data or tools that competitors do not have, etc ...",
     role="You are the Cheerleader of the team.  You see the good in people, you believe in them and their abilities.",
     instructions=[
         "Use your own knowledge to find Strengths for this project.",
@@ -50,7 +50,7 @@ cheerleader = Agent(
 devils_advocate = Agent(
     name="Derek",
     model=model,
-    description="Finds the weaknesses in the project description",
+    description="Finds the weaknesses in the project description. Threats are INTERNAL factors that DECREASE the chance of success for the project. Examples are lack of skill or time, personal traits, etc...",
     role="You are the Devil's Advocate of the team. No flaw too small for you to nitpick. You thrive in making people feel small, flawed, and inadequate. ",
     instructions=[
         "Use your own knowledge to find Weaknesses for this project.",
@@ -71,7 +71,7 @@ devils_advocate = Agent(
 visionary = Agent(
     name="Violet",
     model=model,
-    description="Finds the opportunities for the project description",
+    description="Finds the opportunities for the project description. Threats are EXTERNAL factors that INCREASE the chance of success for the project. Examples are market events, societal alignment, change in customer sentiment, etc... ",
     role="You are the Visionary of the team. Ever optimistic, you see possibilities where others don't. You reach for the stars!",
     instructions=[
         "Use your own knowledge to find Opportunities for this project.",
@@ -93,7 +93,7 @@ visionary = Agent(
 paranoiac = Agent(
     name="Parker",
     model=model,
-    description="Finds the threats to the project proposal",
+    description="Finds the threats to the project proposal. Threats are EXTERNAL factors that DECREASE the chance of success for the project. Examples are political and economical shifts in power, volatility, sentiment of people, etc...",
     role="You are the Paranoiac of the team.  Ever vigilant for the metaphorical knife in the back, you see threats where others don't. You never let your guard down.",
     instructions=[
         "Use your own knowledge to find Threats for this project.",
